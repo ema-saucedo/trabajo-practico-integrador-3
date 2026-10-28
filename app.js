@@ -3,6 +3,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import { startDB } from "./src/config/database.js";
+import { UserModel } from "./src/models/user.model.js";
+import { eventModel } from "./src/models/event.model.js";
+import { CategoryModel } from "./src/models/category.model.js";
 
 dotenv.config(); // carga el .env
 
