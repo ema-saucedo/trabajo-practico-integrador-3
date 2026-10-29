@@ -6,6 +6,10 @@ import { startDB } from "./src/config/database.js";
 import { UserModel } from "./src/models/user.model.js";
 import { eventModel } from "./src/models/event.model.js";
 import { CategoryModel } from "./src/models/category.model.js";
+import { adminMiddleware } from "./src/middlewares/admin.middleware.js";
+import { authMiddleware } from "./src/middlewares/auth.middleware.js";
+import { ownerMiddleware } from "./src/middlewares/owner.middleware.js";
+import { validator } from "./src/middlewares/validator.middleware.js";
 
 dotenv.config(); // carga el .env
 
